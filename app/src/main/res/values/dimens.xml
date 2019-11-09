@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="DefaultTextSize">14sp</dimen>
+    <dimen name="margin_space">16dp</dimen>
+    <dimen name="editTxtMargin_space">36dp</dimen>
+    <dimen name="margin_top">40dp</dimen>
+    <dimen name="editTxt_MarginTop">17dp</dimen>
+    <dimen name="margin_start">24dp</dimen>
+</resources>

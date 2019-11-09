@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">CarLoanCalculator</string>
+    <string name="strInput">Input</string>
+    <string name="strOutput">Output</string>
+    <string name="strCarPrice">CarPrice(RM):</string>
+    <string name="strDownPaymentAmt">DownPayment(RM):</string>
+    <string name="strLoanPeriod">LoanPeriod(Year):</string>
+    <string name="strInterestRate">Interest rate(%):</string>
+    <string name="strCarLoan">CarLoan:</string>
+    <string name="strInterest">Interest:</string>
+    <string name="strMonthlyRepayment">MonthlyRepayment:</string>
+    <string name="strInCarPrice">eg. 0.00</string>
+    <string name="strInDownPaymentAmt">eg. 0.00</string>
+    <string name="strInLoanPeriod">eg. 1</string>
+    <string name="strInInterestRate">eg 0.00</string>
+    <string name="ZeroDefaultValue">0.00</string>
+    <string name="Developer">Developed by WONG KUN HENG</string>
+    <string name="strBtnCalculate">Calculate</string>
+
+
+
+</resources>

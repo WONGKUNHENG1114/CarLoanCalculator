@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    style="txtViewOutputStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/EditTxtLoanPeriod"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/editTxtMargin_space"
+        android:layout_marginTop="@dimen/editTxt_MarginTop"
+        android:ems="10"
+        android:hint="@string/strInLoanPeriod"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/DefaultTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toEndOf="@+id/txtViewLoanPeriod"
+        app:layout_constraintTop_toBottomOf="@+id/EditTxtDownPaymentAmt" />
+
+    <EditText
+        android:id="@+id/EditTxtInterestRate"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/editTxtMargin_space"
+        android:layout_marginTop="@dimen/editTxt_MarginTop"
+        android:ems="10"
+        android:hint="@string/strInInterestRate"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/DefaultTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toEndOf="@+id/txtViewInterestRate"
+        app:layout_constraintTop_toBottomOf="@+id/EditTxtLoanPeriod" />
+
+    <EditText
+        android:id="@+id/EditTxtDownPaymentAmt"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/editTxtMargin_space"
+        android:layout_marginTop="@dimen/editTxt_MarginTop"
+        android:ems="10"
+        android:hint="@string/strInDownPaymentAmt"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/DefaultTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtViewDownPaymentAmt"
+        app:layout_constraintTop_toBottomOf="@+id/EditTxtCarPrice" />
+
+    <TextView
+        android:id="@+id/txtViewLoanPeriod"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/strLoanPeriod"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewDownPaymentAmt" />
+
+    <TextView
+        android:id="@+id/txtViewDownPaymentAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/strDownPaymentAmt"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewCarPrice" />
+
+    <TextView
+        android:id="@+id/txtViewInterestRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/strInterestRate"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewLoanPeriod" />
+
+    <TextView
+        android:id="@+id/textViewInput"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strInput"
+        android:textSize="@dimen/DefaultTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:id="@+id/txtViewCarPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="24dp"
+        android:text="@string/strCarPrice"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInput" />
+
+    <EditText
+        android:id="@+id/EditTxtCarPrice"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/editTxtMargin_space"
+        android:layout_marginTop="@dimen/editTxt_MarginTop"
+        android:ems="10"
+        android:hint="@string/strInCarPrice"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/DefaultTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toEndOf="@+id/txtViewCarPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInput" />
+
+    <TextView
+        android:id="@+id/textViewOutput"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strOutput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTxtInterestRate"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <TextView
+        android:id="@+id/txtViewCarLoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/strCarLoan"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOutput" />
+
+    <TextView
+        android:id="@+id/txtViewOutCarLoan"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/editTxtMargin_space"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/ZeroDefaultValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/txtViewCarLoan"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOutput" />
+
+    <TextView
+        android:id="@+id/txtViewInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/strInterest"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewCarLoan" />
+
+    <TextView
+        android:id="@+id/txtViewOutInterest"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/editTxtMargin_space"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/ZeroDefaultValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/txtViewInterest"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewOutCarLoan" />
+
+    <TextView
+        android:id="@+id/txtViewMonthlyRepayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginTop="@dimen/margin_top"
+
+        android:text="@string/strMonthlyRepayment"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewInterest" />
+
+    <TextView
+        android:id="@+id/txtViewOutMonthlyRepayment"
+        style="@style/txtViewOutputStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/editTxtMargin_space"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/ZeroDefaultValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtViewMonthlyRepayment"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewOutInterest" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Developer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/strBtnCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMonthlyRepayment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
